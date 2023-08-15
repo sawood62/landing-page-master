@@ -1,0 +1,260 @@
+/* CSS Reset */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Calistoga', cursive;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS variable */
+:root {
+    --nevbar-height: 59px
+}
+
+/* navigation bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.2;
+    border-radius: 15px;
+}
+
+/* navigation bar : logo and image */
+#logo {
+    margin: 0px 10px;
+}
+
+#logo img {
+    width: 80px;
+    height: 68px;
+}
+
+/* Nanigation bar : list style */
+nav {
+    position: relative;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 0.9rem;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 5px 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 10px 20px;
+
+}
+
+#navbar ul li a:hover {
+    color: rgb(0, 0, 0);
+    background-color: aliceblue;
+}
+
+/* Home Section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 348px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url('../bg-1.jpg')no-repeat center center/cover;
+    border-radius: 20px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 440px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#home h1 {
+    color: #141c04;
+    text-align: center;
+}
+
+#home p {
+    color: #141c04;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Services Section */
+#services {
+    margin: 34px;
+    display: flex;
+
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 25px;
+    margin: 4px 6px;
+    border-radius: 25px;
+    background-color: #97ffb2;
+}
+
+#services .box img {
+    height: 130px;
+    display: block;
+    margin: auto;
+}
+
+/* Client Section */
+
+#client-section {
+    position: relative;
+
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('../bg-2.png')no-repeat center center/cover;
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item {
+    padding: 23px;
+}
+
+#clients img{
+    height: 120px;
+}
+
+/* Contact Section */
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../contact.jpg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.9;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 32px ;
+}
+#contact-box input,
+#contact-box textarea{
+width: 100%;
+padding: 0.2rem;
+border-radius: 8px;
+font-size: 1.2rem;
+}
+
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.2rem;    
+}
+
+button.bt{
+    width: 102%;
+    margin-top: 5px;
+    padding: 4px;
+    border-radius: 9px;
+    background-color: rgb(179, 131, 131);
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+button.bt:hover{
+    background-color: rgb(88, 181, 88);
+}
+
+footer {
+    background: black;
+    color: aliceblue;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 2px 5px;
+}
+
+/* Utility Class */
+.h-primary {
+    font-size: 2.5rem;
+    padding: 12px;
+}
+
+.h-secondary {
+    font-size: 1.5rem;
+    padding: 12px;
+    text-align: center;
+}
+
+.btn {
+    padding: 6px 23px;
+    margin: 12px;
+    border: 2px solid white;
+    border-radius: 9px;
+    background-color: rgb(68 60 87);
+    color: white;
+
+}
+
+.btn {
+    padding: 6px 23px;
+    border: 2px solid white;
+    border-radius: 9px;
+    background-color: rgb(13 147 15);
+    color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+
+}
+
+.center {
+    text-align: center;
+}
